@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
-	<title>Aulas de Bootstrap</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>Aulas de Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
-		<body>
-			<div class="container" style="background-color:#6495ED">
-			<h1 class="title">"Aulas de Bootstrap 4."</h1>
-			</div>
-					<div class="container-fluid" style="background-color:#ADFF2F">
-					<h2 class="sub_title">Como Usar a Biblioteca do Bootstrap 4.</h2>
-					</div>
-			<div class="container" style="background-color:#E0FFFF">		
-				<div class="row">
-					<div class="col-sm" style="border: 1px solid #008000"><h3>primeira</h3></div>
-					<div class="col-sm" style="border: 1px solid #008000"><h3>segunda</h3></div>
-					<div class="col-sm" style="border: 1px solid #008000"><h3>terceira</h3></div>
-				</div>
-			</div>
+<body>
+    <div class="container" style="background-color:#6495ED">
+        <h1 class="title">"Aulas de Bootstrap 4."</h1>
+    </div>
+    <div class="container-fluid" style="background-color:#ADFF2F">
+        <h2 class="sub_title">Como Usar a Biblioteca do Bootstrap 4.</h2>
+    </div>
+
+    <!--USANDO O "ROW" EM UM CONTAINER-->
+
+    <div class="container" style="background-color:#E0FFFF">
+        <div class="row">
+            <div class="col-sm" style="border: 1px solid #008000">
+                <h3>primeira</h3>
+            </div>
+            <div class="col-sm" style="border: 1px solid #008000">
+                <h3>segunda</h3>
+            </div>
+            <div class="col-sm" style="border: 1px solid #008000">
+                <h3>terceira</h3>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <!--GRID - COLUNA COM LARGURA E NOVA LINHA / ATENÇÃO AO CSS USADO! -->
+
+
+    <style type="text/css">
+        .row [class^=col-],
+        .row .col {
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col">1ª coluna</div>
+            <div class="col">2ª coluna</div>
+            <div class="col">3ª coluna</div>
+            <div class="col">4ª coluna</div>
+            <div class="col">5ª coluna</div>
+            <div class="col">6ª coluna</div>
+        </div>
+    </div>
 
 
 
@@ -32,8 +63,11 @@
 
 
 
-			<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-			<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-				
-		</body>
+
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
