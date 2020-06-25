@@ -32,8 +32,6 @@
         </div>
     </div>
     <p></p>
-    <!--GRID - COLUNA COM LARGURA E NOVA LINHA / ATENÇÃO AO CSS USADO! -->
-
 
     <style type="text/css">
         .row [class^=col-],
@@ -52,6 +50,80 @@
             <div class="col">6ª coluna</div>
         </div>
     </div>
+    <p></p>
+
+    <!--GRID - COLUNA COM LARGURA E NOVA LINHA / ATENÇÃO AO CSS USADO! -->
+    <center>
+        <h4> GRID - COLUNA COM LARGURA E NOVA LINHA /#PARA QUEBRAR LINHA USANDO A ROW.
+            <br>UTILIZAMOS UMA ->
+            < div class="w-100">
+                < /div>" na linha onde você quer quebrar a linha OUTRO FORMA É CRIAR OUTRA DIV ROW
+    </center>
+
+    <style type="text/css">
+        .row [class^=col-],
+        .row .col {
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col">1ª coluna</div>
+            <div class="col">2ª coluna</div>
+            <div class="col">3ª coluna</div>
+            <!--PARA TER UMA QEBRA DE LUNHA SEM PRECISAR FAZER OUTRA "ROW"-->
+            <div class="w-100"></div>
+            <div class="col">4ª coluna</div>
+            <div class="col">5ª coluna</div>
+            <div class="col">6ª coluna</div><br>
+        </div>
+    </div>
+    <p></p>
+    <h5>
+        <center> #ESPECIFICANCO O TAMANHO DA COLUNA USAMOS "COL-(UM NUMERO DE 1 A 12) EX:
+            < div class="col-2">???
+                < /div>
+        </center>
+    </h5>
+    <style type="text/css">
+        .row [class^=col-],
+        .row .col {
+            background-color: rgb(51, 226, 168);
+            border: 2px solid black;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">7ª coluna</div>
+            <div class="col-lg-5">8ª coluna</div>
+            <div class="col-xl-6">9ª coluna</div>
+            <div class="col-6">9ª coluna</div>
+        </div>
+    </div>
+    <P></P>
+
+    <center>#ORDENANDO AS COLUNAS -> PODEMOS USAR O "COL ORDER-FIRST" ; "COL ORDER-LAST"; #OUTRA FORM E USANDO -> COL ORDER-1 (NUMERO DA POSIÇÃO QUE VOCÊ QUER) <br>OBS: QUANDO ORDENADO POR NUMERO, AS COLUNAS NÃO ORDENADAS VÃO FICAR PRIMEIRO.
+    </center>
+    <style type="text/css">
+        .row [class^=col-],
+        .row .col {
+            background-color: rgb(51, 226, 168);
+            border: 2px solid black;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col order-first">7ª coluna(em 1º por ter usado o order-first)</div>
+            <div class="col order-last">8ª coluna</div>
+            <div class="col order-3">9ª coluna</div>
+            <div class="col order-2">10ª coluna</div>
+            <div class="col">não ordenada</div>
+        </div>
+    </div>
+
+
+
 
 
 
