@@ -115,6 +115,19 @@
             padding: 15px;
             height: 150px;
         }
+        .avatar{
+            width: 120px;
+            height: 110px;
+            padding: 10px;
+            background-color: rgb(11, 68, 68);
+            border: 3px solid rgb(240, 13, 32);
+        }
+        .media{
+            border-bottom: 2px;
+            background-color: rgb(127, 224, 224);
+            color: rgb(53, 22, 22);
+
+        }
     </style>
     <div class="container">
         <div class="row">
@@ -186,7 +199,7 @@
         <div class="col-3">3ª coluna</div>
     </div>
 </div>
-p></p>
+<p></p>
 <center>
     < div class="row justify-content-start align-items-end"> ALINHA A ESQUERDA / ALINHA NA PARTE DE BAIXO A ESQUERDA
 </center>
@@ -198,7 +211,7 @@ p></p>
         <div class="col-3">3ª coluna</div>
     </div>
 </div>
-p></p>
+<p></p>
 <center>
     < div class="row justify-content-start align-items-center"> ALINHA A ESQUERDA / ALINHA NO CENTRO
 </center>
@@ -210,7 +223,81 @@ p></p>
         <div class="col-3">3ª coluna</div>
     </div>
 </div>
+<p></p>
 
+<!--UTILIZANDO UMA IMAGEM PARA COMENTARIOS DENTRO DO SISTEMA-->
+<!--SERÁ CRIADO DENTRO "STYLE" UMA CLASS "AVATAR"-->
+
+<div class="container">
+    <div class="media">
+      <img src="imagens/ev_img.jpg" class="mr-3 avatar">
+       <div class="media-body">
+           <h5>MEDIA COMPONENT -</h5>
+             <p>Recurso para um sistema de comentarios em uma img.(tipo facebook)<br> 
+                < div class="container"> <br>
+                    < div class="media"><br>
+                        < img src="imagens/ev_img.jpg" class="mr-3 <b><i>avatar (essa class esta dentro do style)</i></b>"<br>
+                        < div class="media-body">
+             </p>
+       </div>   
+    </div>
+<p></p>    <!--AGORA VAMSO USAR ESSE MESMO RECURSO PARA FAZER UMA LISTA <li>-->
+        <ul class="list-unstylied">
+            <li class="media">
+                <img src="imagens/ev_img.jpg" class="mr-3 avatar align-self-center"><!--PODEMOS ALINHAR NO CENTRO-->
+                    <div class="media-body">
+                        <h5>MEDIA COMPONENT -</h5>
+                        <p>< img src="imagens/ev_img.jpg" class="mr-3 avatar align-self-center"><br>
+                            ALINHAR NO CENTRO (CENTER)<br>
+                            Recurso para um sistema de comentarios em lista em uma img.(tipo facebook)<br>
+                        < div class="container"> <br>
+                            < div class="media"><br>
+                                < img src="imagens/ev_img.jpg" class="mr-3 <b><i>avatar (essa class esta dentro do style)</i></b>"
+                                    <br>
+                                    < div class="media-body">
+                        </p>
+                    </div>
+            </li>
+        </ul>  <p></p>
+ 
+                <ul class="list-unstylied">
+                    <li class="media">
+                        <img src="imagens/ev_img.jpg" class="mr-3 avatar align-self-end"><!--ALINHAR NO FIM (END)-->
+                        <div class="media-body">
+                            <h5>MEDIA COMPONENT -</h5>
+                            <p>< img src="imagens/ev_img.jpg" class="mr-3 avatar align-self-end"><br>
+                            ALINHAR NO FIM (END)<br>
+                                Recurso para um sistema de comentarios em lista em uma img.(tipo facebook)<br>
+                                < div class="container"> <br>
+                                    < div class="media"><br>
+                                        < img src="imagens/ev_img.jpg"
+                                            class="mr-3 <b><i>avatar (essa class esta dentro do style)</i></b>" <br>
+                                            < div class="media-body">
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="list-unstylied">
+                    <li class="media">
+                        <img src="imagens/ev_img.jpg" class="mr-3 avatar align-self-start"><!--ALINHAR EM DEFUL (START)-->
+                        <div class="media-body">
+                            <h5>MEDIA COMPONENT -</h5>
+                            <p>< img src="imagens/ev_img.jpg" class="mr-3 avatar align-self-start"><br>
+                                ALINHAR EM DEFUL (START)<br>
+                                Recurso para um sistema de comentarios em linsta em uma img.(tipo facebook)<br>
+                                < div class="container"> <br>
+                                    < div class="media"><br>
+                                        < img src="imagens/ev_img.jpg"
+                                            class="mr-3 <b><i>avatar (essa class esta dentro do style)</i></b>" <br>
+                                            < div class="media-body">
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+
+</div>
 
 
 
