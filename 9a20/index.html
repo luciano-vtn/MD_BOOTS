@@ -715,7 +715,65 @@
     <h2 class="aula9"> ACCORDION (AULA 16)</h2>
 </center>
 <br>
-<center><b><u>ACCORDION</u></b></center>
+<h5><center><b><u>ACCORDION </u>-> São úteis quando você deseja alternar entre <u>ocultar e mostrar</u> grande quantidade de conteúdo:</b></center></h5>
+<br>
+    O acordeão ("ACCORDION") Bootstrap é um componente que organiza o conteúdo dentro de itens recolhíveis. O acordeão permite a exibição
+    de apenas um item recolhido por vez.
+    
+    Os acordeões podem alternar entre vários blocos de texto com um único clique e isso aprimora muito a experiência do
+    usuário do seu projeto.
+<br>
+<p></p>
+
+        <div class="container">
+            <div id="accordion">
+                <div id="card"> <!--DENTRO DESTA <div id="card" vai o CARD-HEADER E O CARD-BODY>-->
+                    <div class="card-header"> <!--CARD-HEADER -> É O TUTULO (FICA COM A COR DA ABA DIFERENTE)-->
+                       <button class="btn btn-link" data-toggle="collapse" data-target="#card1" aria-controls="card1">(TITULO 1 {aqui estamos usando o class="collapse show"}) -> AULA SOBRE ACCORDION</button>
+                    </div >
+                        <div id="card1" class="collapse show" data-parent="#accordion"> <!--PARA APARECER O CARD-BODY JÁ NA ENTRADA USAR O "CLASS="collapse-SHOWS"-->
+                            <div class="card-body"> <!--CARD-BODY -> É O CORPO OU TEXTO / RESPOSTA-->
+                                (TEXTO 1) -> Qualquer texto sobre essa Teg <br>
+                                <i>Os acordeões ("ACCORDION") podem alternar entre vários blocos de texto com um único clique e isso aprimora muito a experiência do
+                                usuário do seu projeto.</i>
+                            </div >
+                        </div>
+                </div>
+<!--SEGUNDO card-->
+                        <div id="card"><!--DENTRO DESTA <div id="card" vai o CARD-HEADER E O CARD-BODY>-->
+                            <div class="card-header"><!--CARD-HEADER -> É O TUTULO (FICA COM A COR DA ABA DIFERENTE)-->                                
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#card2" aria-controls="card2">(TITULO 2 {aqui <u>NÃO</u> usamos o class="collapse-show"}) -> AULA
+                                    SOBRE ACCORDION</button>
+                            </div>
+                                <div id="card2" class="collapse" data-parent="#accordion"><!--PARA APARECER O CARD-BODY JÁ NA ENTRADA USAR O "CLASS="collapse-SHOWS"-->                                
+                                    <div class="card-body"><!--CARD-BODY -> É O CORPO OU TEXTO / RESPOSTA-->
+                                        (TEXTO) -> Qualquer texto sobre essa Teg <br>
+                                        <i>Nota: <br>
+                                        Para preservar o comportamento elegante do acordeão e evitar percalços no espaço de rolagem, verifique se as guias têm a
+                                        mesma altura.</i>
+                                     </div>
+                                </div>
+                        </div>
+            </div >
+        </div >
+<p></p>
+<br>
+<div class="container" style="background-color: #ADFF2F;">
+    <center>
+        <p class="h2">PROXIMA AULA</p>
+    </center>
+</div>
+<center>
+    <h2 class="aula9"> DROPDOWN (AULA 17)</h2>
+</center>
+<br>
+<h5>
+    <b><u>DROPDOWN</u> ->Dropdowns são botões com alternância de visibilidade de listas de links e outras coisas.</b><br> Conseguem ser interativos
+    graças a sua construção que foi feita com o plugin JavaScript dropdown. A visibilidade do <b>conteúdo é alternada com
+    cliques</b> e nunca só ao passar o mouse em cima do botão (uma decisão de design intencional).
+</h5>
+<br>
+
 
    
 
