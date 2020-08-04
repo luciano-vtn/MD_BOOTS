@@ -14,3 +14,4 @@ Atual do dia 17/07/20
 Atual do dia 24/07/20 (Accordeon).
 >>>>>>> 3d7b885064b3b1f9c7684a03d929515aeb544868
 Aulas do dia 30/07/2020 iniciando em Formulários.
+Atualizando em 04/08/20 aulas 18 e 19
