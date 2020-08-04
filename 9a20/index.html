@@ -906,13 +906,230 @@ SEGUNDA OPÇÃO: com login e Senha
 </center>
 <br>
 <h5>
-    <b><u>FORMULÁRIOS</u> ->Exemplos, instruções para estilizar campos de formulários, opções de layout e componentes personalizados para criar uma
+    <b><u>FORMULÁRIOS</u></b>->Exemplos, instruções para estilizar campos de formulários, opções de layout e componentes personalizados para criar uma
     grande variedade de formulários.<br>
-    Campos de formulário textuais como < input>, < select> e < textarea> são estilizados com a classe .form-control. Ela possui estilos para aparência, estado de foco e muito mais.
+    Campos de formulário textuais como < input>, < select> e < textarea> são estilizados com a classe .form-control. Ela possui estilos para aparência, estado de foco e muito mais.<br>
 </h5>
-<br>
+<h6>
+    * Para aumentar o campo em altura é so usar o (class="form-control form-control-lg"). / Para diminuir é so usar o "SM"
+    no ligar o "LG"<br>
+    * Uma propriedade extra você pode usar o "READONLY"{PROPRIEDADE PARA QUE O SEU USUARIO NÃO ALTERE O TEEXTO DENTRO DO CAMPO}<br>
+    * FORM-CONTROL-PLAINTEXT - interessante.<br>
+    ** PARA COLOCAR O SEU FORMULÁRIO INLINE (EM LINHA / NA HORIZONTAL).<br>
+    ** EXPLICAÇÃO MUITO IMPORTANTE PARA SE USAR OS GRIDS ( FORM-ROW) ***** MUITO INTERESSANTE.******<br>
+</h6>
+<p></p>
+<hr>
+<p></p>
 
-   
+ 1º MODO () FORMA SIMPLES DE CRIAR UM FORMULÁRIO.
+
+        <div class="container">
+            <form method="POST">
+                E-mail: <br><br>
+                    <input type="email" name="email"/> <br><br>
+                Senha: <br><br>
+                    <input type="password" name="senha"/> <br><br>
+ <!--CRIANDO O BTN-->  <input type="submit" nome="ENTRAR">
+            </form>
+        </div >
+<p></p>
+<hr>
+<p></p>
+2º MODO () FORMA USANDO O BOOTSTRAP {RESPONSIVO}.
+<br>
+        <div class="container">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="email">E-mail:</label><!--O "for" é "para"--/ com isso ao clicar no E-mail, direciona para dentro ca caixa.-->
+                    <input id="email" type="email" name="email" class="form-control">
+                </div >
+                <div class="form-group">
+                    <label for="senha">Senha:</label> <!--Mesma logica-->
+                    <input id="senha" type="password" name="senha" class="form-control">
+                </div >
+                <div>
+<!--CRIANDO BTN-->   <input class="btn btn-primary" type="submit" name="ENTRAR">
+                </div>
+            </form>
+        </div >
+
+<p></p>
+<hr>
+<p></p>
+3º MODO () FORMA USANDO O BOOTSTRAP.{ALTERANDO O TAMANHO DO CAMPO CAMPO (USANDO O lg e o sm)}
+<br>
+<p></p>
+        <div class="container">
+            <form method="POST">
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" name="email" class="form-control-lg"><!--orm-control-lg = campo MAIOE-->
+                    </div>
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+<!--Mesma logica-->         <input id="senha" type="password" name="senha" class="form-control-sm"><!--orm-control-sm = campo MENOR-->
+                        </div>
+                            <div>
+<!--CRIANDO BTN-->             <input class="btn btn-primary" type="submit" name="ENTRAR">
+                            </div>
+            </form>
+        </div>
+
+<p></p>
+<hr>
+<p></p>
+
+4º MODO () FORMA USANDO O BOOTSTRAP.[COM A PROPRIEDADE "readonly" <br>
+VOCÊ JÁ DEFINE O E-MAIL PADRÃO. ***SEM TER O CAMPO***(USANDO O "form-control-plaintext")
+<br>
+            <div class="container">
+                <form method="POST">
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+<!--*forn-control-plaintext READONLY AQUI-->                            
+                            <input id="email" type="email" name="email" class="form-control-plaintext"value="UmEmailqualquer@texte.com" readonly>
+                        </div>
+                            <div class="form-group">
+                                <label for="senha">Senha:</label>
+                                <input id="senha" type="password" name="senha" class="form-control">
+                            </div>
+                    <div>
+<!--CRIANDO BTN-->     <input class="btn btn-primary" type="submit" name="ENTRAR">
+                    </div>
+                </form>
+            </div>
+<p></p>
+<hr>
+<p></p>
+
+5º MODO () FORMA USANDO O BOOTSTRAP.[COM A PROPRIEDADE "readonly"] Obs: sem o "readonly" o texto fica editavel. <br>
+VOCÊ JÁ DEFINE O E-MAIL PADRÃO NO CAMPO.
+<br>
+        <div class="container">
+            <form method="POST">
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+<!--READONLY AQUI-->        <input id="email" type="email" name="email" class="form-control" value="UmEmailqualquer@texte.com" readonly>
+                        </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" name="senha" class="form-control">
+                </div>
+                         <div>
+<!--CRIANDO BTN-->          <input class="btn btn-primary" type="submit" name="ENTRAR">
+                        </div>
+            </form>
+        </div>
+<p></p>
+<hr>
+<p></p>
+
+6º MODO () FORMA USANDO O BOOTSTRAP.{**USANDO O PLACEHOLDER**}
+**Usamos o "placeholder" para deixar o campo E-mail e a Senha já dentro do campo.**
+        <br>
+        <p></p>
+        <div class="container">
+            <form method="POST">
+                <div class="form-group">
+                    <input id="email" type="email" name="email" class="form-control" placeholder="E-mail:">
+                </div>
+                <div class="form-group">
+                    <input id="senha" type="password" name="senha" class="form-control" placeholder="Senha:">
+                </div>
+                <div>
+                     <input class="btn btn-primary" type="submit" name="ENTRAR">
+                </div>
+            </form>
+        </div>
+<p></p>
+<br>
+<hr>
+<p></p>
+
+7º MODO () FORMA USANDO O BOOTSTRAP.{COLOCANDO OS CAMPO EM LINHA ("inline")} 
+ **AIDA UTILIZANDO O PLACEHOLDER**
+<br>
+<br>
+<p></p>
+                     <div class="container">
+<!--AQUI O INLINE-->    <form method="POST" class="form-inline">
+                            <div class="form-group">
+                                <input id="email" type="email" name="email" class="form-control" placeholder="E-mail:">
+                            </div>
+                                <div class="form-group">
+                                    <input id="senha" type="password" name="senha" class="form-control" placeholder="Senha:">
+                                </div>
+                                    <div>
+                                        <input class="btn btn-primary" type="submit" name="ENTRAR">
+                                    </div>
+                        </form>
+                    </div>
+<p></p>
+<br>
+<hr>
+<p></p>
+
+8º MODO () FORMA USANDO O BOOTSTRAP.{** USANDO OS GRIDS **}
+<br>
+<br>
+<p></p>
+                <div class="container">
+                    <form method="POST">
+                        <div class="forn-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input id="nome" type="text" name="nome" class="form-control" placeholder="Nome Completo">
+                                </div>
+                            </div >
+                        </div >
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input id="email" type="email" name="email" class="form-control" placeholder="E-mail:">
+                                        </div>    
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input id="senha" type="password" name="senha" class="form-control" placeholder="Senha:">
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div>
+                                                <input class="btn btn-primary" type="submit" name="ENTRAR">
+                                            </div>
+                                        </div >
+                                    </div>
+                    </form>
+                </div>
+<p></p>
+<br>
+<hr>
+<p></p>
+
+<br>
+<div class="container" style="background-color: #ADFF2F;">
+    <center>
+        <p class="h2">PROXIMA AULA</p>
+    </center>
+</div>
+<center>
+    <h2 class="aula9"> INPUT GROUP(AULA 19)</h2>
+</center>
+<br>
+<h5>
+    <b><u>INPUT GROUP</u></b>->"Grupo de entrada"<P></P>
+    Amplie facilmente os controles de formulário adicionando texto, botões ou grupos de botões em ambos os lados das
+    entradas de texto, seleções personalizadas e entradas de arquivo personalizadas.
+</h5>
+<P></P>
+<h6>
+A input-group é um contêiner para aprimorar uma entrada adicionando um ícone, texto ou um botão na frente ou
+atrás do campo de entrada como um "texto de ajuda".
+
+</h6>
 
 
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
